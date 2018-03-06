@@ -7,5 +7,5 @@ namespace util
 	void AnyKeyToContinue();
 	void ClearInput();
 	int IntChecker();
-	bool ExitProgram();
+	bool Exit();
 }
