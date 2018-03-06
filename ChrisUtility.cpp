@@ -10,11 +10,11 @@ namespace util
 {
 	void ClearScreen()
 	{
-#ifdef _WIN32
+	#ifdef _WIN32
 		system("cls");
-#else		// Assume POSIX
+	#else		// Assume POSIX
 		system("clear");
-#endif
+	#endif
 	}
 
 	void Pause(int dur)
@@ -52,7 +52,7 @@ namespace util
 		return userInput;
 	}
 
-	bool ExitProgram()
+	bool Exit()
 	{
 		char question = '\0';
 		bool exit = false;
@@ -69,7 +69,7 @@ namespace util
 		return exit;
 	}
 
-	bool ExitProgram(std::string temp)
+	bool Exit(std::string temp)
 	{
 		char question = '\0';
 		bool exit = false;
