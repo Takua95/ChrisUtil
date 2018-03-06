@@ -5,7 +5,7 @@
 #include <windows.h>
 #include "ChrisUtility.hpp"
 
-#undef max;
+#define NOMINMAX
 namespace util
 {
 	void ClearScreen()
